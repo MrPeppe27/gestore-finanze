@@ -1,79 +1,52 @@
-Gestore di Spese Personali (Web App)
+# Gestore di Spese Personali (Web App)
 
-Questo progetto consiste nella realizzazione di una semplice web app per tracciare le spese quotidiane, permettendo l'inserimento, la visualizzazione e la gestione dinamica dei dati.
+[cite_start]Questo progetto consiste nella realizzazione di una web app semplice ed intuitiva che permette agli utenti di tenere traccia delle proprie spese quotidiane[cite: 3, 4]. [cite_start]L'applicazione è sviluppata interamente con tecnologie web standard senza l'ausilio di framework esterni[cite: 5].
 
-🎯 Obiettivo
+## 🎯 Obiettivo del Progetto
+L'obiettivo principale è creare una pagina dinamica che consenta di:
+* [cite_start]Inserire nuove spese[cite: 8].
+* [cite_start]Visualizzare l'elenco completo delle spese registrate[cite: 9].
+* [cite_start]Visualizzare il totale delle spese calcolato automaticamente[cite: 10].
+* [cite_start]Eliminare singole spese dalla lista[cite: 11].
+* [cite_start]Aggiornare i dati mostrati nella pagina in tempo reale[cite: 12].
 
-L'applicazione permette all'utente di:
+## 🛠️ Tecnologie Utilizzate
+* [cite_start]**HTML**: Per la struttura della pagina[cite: 14].
+* [cite_start]**CSS**: Per lo stile e il layout[cite: 15].
+* [cite_start]**JavaScript**: Per la logica, la gestione degli eventi e la manipolazione del DOM[cite: 16].
 
-    Inserire nuove spese.
+## 📂 Struttura dei File
+[cite_start]Il progetto deve essere organizzato con la seguente gerarchia[cite: 18]:
+* [cite_start]`index.html` [cite: 19]
+* [cite_start]`style.css` [cite: 20]
+* [cite_start]`script.js` [cite: 21]
 
-Visualizzare l'elenco completo delle spese inserite.
+## 💻 Funzionalità dell'Interfaccia
 
-Visualizzare il totale complessivo.
+### 1. Inserimento Spese
+[cite_start]La pagina include una sezione dedicata con[cite: 25]:
+* [cite_start]Un campo di testo per la descrizione della spesa[cite: 26].
+* [cite_start]Un campo numerico per l'importo[cite: 27].
+* [cite_start]Un bottone "Aggiungi spesa" per confermare l'inserimento[cite: 29, 30].
 
-Eliminare singole spese.
+### 2. Elenco e Riepilogo
+* [cite_start]**Lista Spese**: Ogni voce inserita viene mostrata in un `div` specifico contenente descrizione, importo e un bottone "Elimina"[cite: 32, 33, 34, 35, 36].
+* [cite_start]**Totale**: Un'area dedicata mostra il totale complessivo delle spese, aggiornato costantemente[cite: 37, 38, 52].
 
-Aggiornare i dati in tempo reale senza ricaricare la pagina.
+## ⚙️ Requisiti Tecnici (JavaScript)
+* [cite_start]**Validazione**: All'inserimento, il sistema controlla che i campi non siano vuoti[cite: 43].
+* [cite_start]**Data Management**: Le spese devono essere salvate in un array di oggetti[cite: 44, 72].
+* [cite_start]**Aggiornamento Dinamico**: La pagina non deve mai essere ricaricata per mostrare i nuovi dati[cite: 48].
+* [cite_start]**Gestione Eventi**: Utilizzo obbligatorio di `addEventListener` o eventi `onclick`[cite: 70].
 
-🛠️ Tecnologie Utilizzate
+## 🎨 Requisiti Visuali (CSS)
+* [cite_start]Layout ordinato con un contenitore centrale[cite: 60, 61].
+* [cite_start]Spese ben separate visivamente tra loro[cite: 62].
+* [cite_start]Evidenziazione chiara del totale delle spese[cite: 63].
 
-Il progetto è sviluppato esclusivamente con tecnologie web standard, senza l'ausilio di framework esterni:
+## 🚫 Vincoli
+* [cite_start]Vietato l'uso di librerie o framework (es. Bootstrap, React)[cite: 66].
+* [cite_start]Vietato l'uso di `alert()` per mostrare i dati[cite: 67].
 
-    HTML: Struttura della pagina.
-
-CSS: Stile, layout e design responsive.
-
-JavaScript: Logica applicativa, gestione eventi e manipolazione del DOM.
-
-📂 Struttura del Progetto
-
-La directory di progetto è organizzata come segue:
-
-    index.html: Struttura dell'interfaccia.
-
-style.css: Foglio di stile.
-
-script.js: Logica di funzionamento.
-
-💻 Funzionalità e Requisiti
-
-Interfaccia Utente (HTML/CSS)
-
-    Sezione Inserimento: Campi input per descrizione (testo) e importo (numero), con relativo bottone "Aggiungi spesa".
-
-Elenco Spese: Lista dinamica dove ogni voce mostra descrizione, importo e un bottone "Elimina".
-
-Riepilogo: Un'area dedicata che evidenzia il totale calcolato.
-
-Design: Layout ordinato con un contenitore centrale e spese visivamente separate.
-
-Logica Applicativa (JavaScript)
-
-    Gestione Dati: Le spese sono salvate in una struttura dati basata su un array di oggetti.
-
-Validazione: Controllo dei campi vuoti prima dell'inserimento.
-
-Calcolo Totale: Il totale viene ricalcolato automaticamente a ogni aggiunta o rimozione.
-
-Manipolazione DOM: Uso di addEventListener (o onclick) e selettori come getElementById o querySelector.
-
-🚫 Vincoli e Regole
-
-    Nessun Framework: È vietato l'uso di librerie come Bootstrap, React, ecc..
-
-Nessun Alert: È vietato l'uso di alert() per mostrare i dati.
-
-🌟 Estensioni Facoltative (Bonus)
-
-È possibile arricchire l'app con le seguenti funzionalità:
-
-    Salvataggio persistente tramite localStorage.
-
-Assegnazione di una categoria (cibo, trasporti, ecc.) e relativi filtri.
-
-Messaggio di stato "Nessuna spesa inserita".
-
-Evidenziazione delle spese che superano una certa soglia.
-
-Pulsante per il reset totale delle spese.
+---
+[cite_start]*Progetto basato sulle specifiche del documento "Gestore di Spese Personali"[cite: 1].*
