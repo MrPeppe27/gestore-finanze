@@ -1,134 +1,79 @@
 Gestore di Spese Personali (Web App)
 
-
-🧩 Contesto
-
-Molte applicazioni reali permettono agli utenti di tenere traccia delle proprie spese
-quotidiane.
-
-In questo progetto dovrai realizzare una semplice web app che consenta di inserire,
-visualizzare e gestire spese, aggiornando dinamicamente la pagina.
-
-Il progetto deve essere sviluppato utilizzando HTML, CSS e JavaScript, senza framework
-esterni.
-
+Questo progetto consiste nella realizzazione di una semplice web app per tracciare le spese quotidiane, permettendo l'inserimento, la visualizzazione e la gestione dinamica dei dati.
 
 🎯 Obiettivo
 
-Creare una pagina web che permetta all’utente di:
+L'applicazione permette all'utente di:
 
-● inserire nuove spese
+    Inserire nuove spese.
 
-● visualizzare l’elenco delle spese inserite
+Visualizzare l'elenco completo delle spese inserite.
 
-● visualizzare il totale delle spese
+Visualizzare il totale complessivo.
 
-● eliminare una spesa
+Eliminare singole spese.
 
-● aggiornare automaticamente i dati mostrati nella pagina
+Aggiornare i dati in tempo reale senza ricaricare la pagina.
 
+🛠️ Tecnologie Utilizzate
 
-🛠 Tecnologie da utilizzare
+Il progetto è sviluppato esclusivamente con tecnologie web standard, senza l'ausilio di framework esterni:
 
-● HTML → struttura della pagina
+    HTML: Struttura della pagina.
 
-● CSS → stile e layout
+CSS: Stile, layout e design responsive.
 
-● JavaScript → logica, eventi e manipolazione del DOM
+JavaScript: Logica applicativa, gestione eventi e manipolazione del DOM.
 
+📂 Struttura del Progetto
 
-📁 Struttura del progetto
+La directory di progetto è organizzata come segue:
 
-gestore-spese/
+    index.html: Struttura dell'interfaccia.
 
-│── index.html
+style.css: Foglio di stile.
 
-│── style.css
+script.js: Logica di funzionamento.
 
-│── script.js
+💻 Funzionalità e Requisiti
 
+Interfaccia Utente (HTML/CSS)
 
-🧱 Struttura dell’interfaccia (HTML)
+    Sezione Inserimento: Campi input per descrizione (testo) e importo (numero), con relativo bottone "Aggiungi spesa".
 
-La pagina deve contenere almeno:
+Elenco Spese: Lista dinamica dove ogni voce mostra descrizione, importo e un bottone "Elimina".
 
-1. Titolo dell’applicazione
-  
-2. Sezione di inserimento spesa
+Riepilogo: Un'area dedicata che evidenzia il totale calcolato.
 
-○ input testo → descrizione spesa
+Design: Layout ordinato con un contenitore centrale e spese visivamente separate.
 
-○ input numero → importo
+Logica Applicativa (JavaScript)
 
-○ bottone → “Aggiungi spesa”
+    Gestione Dati: Le spese sono salvate in una struttura dati basata su un array di oggetti.
 
-5. Sezione elenco spese
+Validazione: Controllo dei campi vuoti prima dell'inserimento.
 
-○ una lista di elementi (div)
+Calcolo Totale: Il totale viene ricalcolato automaticamente a ogni aggiunta o rimozione.
 
-○ ogni spesa deve mostrare:
+Manipolazione DOM: Uso di addEventListener (o onclick) e selettori come getElementById o querySelector.
 
-■ descrizione
+🚫 Vincoli e Regole
 
-■ importo
+    Nessun Framework: È vietato l'uso di librerie come Bootstrap, React, ecc..
 
-■ bottone “Elimina”
+Nessun Alert: È vietato l'uso di alert() per mostrare i dati.
 
-7. Sezione riepilogo
+🌟 Estensioni Facoltative (Bonus)
 
-○ div che mostra il totale delle spese
+È possibile arricchire l'app con le seguenti funzionalità:
 
+    Salvataggio persistente tramite localStorage.
 
-⚙ Funzionalità obbligatorie (JavaScript)
+Assegnazione di una categoria (cibo, trasporti, ecc.) e relativi filtri.
 
-1⃣ Inserimento spesa
+Messaggio di stato "Nessuna spesa inserita".
 
-● Alla pressione del bottone:
-○ leggere i valori degli input
-○ controllare che i campi non siano vuoti
-○ salvare la spesa in una struttura dati (array di oggetti)
+Evidenziazione delle spese che superano una certa soglia.
 
-2⃣ Visualizzazione spese
-● Le spese devono essere mostrate dinamicamente nella pagina
-● Ogni spesa deve essere visualizzata in un proprio div
-● La pagina non deve essere ricaricata
-
-3⃣ Calcolo del totale
-● Il totale delle spese deve essere:
-○ calcolato tramite JavaScript
-○ aggiornato automaticamente a ogni inserimento o eliminazione
-
-4⃣ Eliminazione spesa
-● Ogni spesa deve avere un bottone “Elimina”
-● Cliccando il bottone:
-○ la spesa viene rimossa dall’array
-○ la lista e il totale vengono aggiornati
-
-
-🎨 Requisiti CSS
-
-● Layout ordinato e leggibile
-● Contenitore centrale
-● Spese ben separate visivamente
-● Evidenziare il totale delle spese
-● Uso corretto di classi CSS
-
-
-🚫 Vincoli
-
-● ❌ Vietato usare librerie o framework (Bootstrap, React, ecc.)
-● ❌ Vietato usare alert() per mostrare i dati
-● ✅ Obbligatorio usare:
-○ addEventListener o eventi onclick
-○ document.getElementById / querySelector
-○ array e oggetti JavaScript
-
-
-⭐ Estensioni facoltative (bonus)
-
-● Salvataggio delle spese in localStorage
-● Categoria della spesa (cibo, trasporti, altro)
-● Filtro per categoria
-● Messaggio “Nessuna spesa inserita”
-● Evidenziare spese sopra una certa soglia
-● Pulsante “Reset spese”
+Pulsante per il reset totale delle spese.
